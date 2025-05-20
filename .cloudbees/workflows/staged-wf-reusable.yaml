@@ -42,10 +42,10 @@ jobs:
         echo "hello job-2"
   job-3:
     needs: job-2
-    uses: pinaki124/reusable/rw-reusable.yaml
+    uses: pinaki124/cb-app-workflow/reusable/rw-reusable.yaml
   job-4:
     needs: job-3
     uses: ./reusable/reusable.yaml
   job-5:
     needs: job-3
-    uses: https://github.com/pinaki124/reusable/reusable.yaml
+    uses: https://github.com/pinaki124/cb-app-workflow/reusable/reusable.yaml
